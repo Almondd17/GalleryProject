@@ -3,7 +3,7 @@ body{
     padding: 0;
     overflow-y: hidden;
 }
-.topBar{
+.navbar{
     background-color: none;
     border-bottom: 1px solid grey;
     display: flex;
@@ -11,17 +11,17 @@ body{
     justify-content: space-between;
     flex-direction: row;
 }
-.topBar ul{
+.navbar ul{
     list-style-type: none;
     white-space: nowrap;
     padding: auto;
 }
-.topBar li a{
+.navbar li a{
     list-style-type: none;
     text-decoration: none;
     color: black;
 }
-.topBar li{
+.navbar li{
     border-radius: 15px;
     padding: 20px;
     display: inline-block;
@@ -32,12 +32,12 @@ body{
     color: black;
     transition: 0.3s;
 }
-.topBar li:hover{
+.navbar li:hover{
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     transition: 0.3s;
     cursor: pointer;
 }
-.topBar span{
+.navbar span{
     font-size: 45px;
     margin: 30px;
 }
@@ -53,7 +53,7 @@ body{
 }
 #logo{
     transition: 0.5s;
-    width: 25%;
+    width: 30%;
     cursor: pointer;
 }
 #logo:hover{
@@ -62,8 +62,10 @@ body{
     
 }
 .paragraph-container {
-    max-height: 80vh; /* Set the desired height */
+    position: static;
+    max-height: 75vh;
     overflow: auto;
+    overflow-x: none;
     background-color: #f5f5f5;
     padding: 0px 10px 0 10px;
     width: 30%;
@@ -71,7 +73,7 @@ body{
     flex-direction: column;
     float: right;
     margin: 1.5% 3% 0% 0%;
-    height: 90vh;
+    height: 75vh;
     border-radius: 7px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -82,6 +84,7 @@ body{
     font-family: 'Raleway', sans-serif;
     line-height: 2;
     color: #333;
+    flex-wrap: nowrap;
 }
 .paragraph-container::-webkit-scrollbar{
     background: rgba(230, 230, 230, 0.832);
@@ -97,10 +100,10 @@ body{
 .images-div {
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     margin: 1.5% 5%;
-    width: 105vh;
-    height: 80vh;
+    width: 115vh;
+    height: 75vh;
     background-image: url(/images/img6.jpg);
     animation: image-change 20s infinite step-end;
     background-size: cover;
@@ -135,4 +138,7 @@ body{
         background-size: cover;
         background-position: center;
     }
+}
+.active{
+    background: rgba(140, 140, 140, 0.243);
 }
