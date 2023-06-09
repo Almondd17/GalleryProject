@@ -101,10 +101,17 @@ body {
     object-fit: cover;
   }
   .category-image {
-    width: 200px; /* Adjust the size as per your preference */
+    width: 350px; /* Adjust the size of each image */
     height: auto;
-    margin: 10px; /* Adjust the margin as per your preference */
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 100px;
     border: 2px solid #ccc; /* Add a border around the images */
     border-radius: 5px; /* Add rounded corners to the images */
-  }
-  
+}
+.category-h2{
+    text-align: center;
+    font-family: cursive;
+    font-weight: lighter;
+    font-size: xx-large;
+}

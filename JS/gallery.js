@@ -69,7 +69,7 @@ var categoryImages = {
     contentDiv.innerHTML = "";
   
     // Generate new content based on the selected category
-    var categoryContent = "<h2>" + category.charAt(0).toUpperCase() + category.slice(1) + "</h2>";
+    var categoryContent = "<h2 class='category-h2'>" + category.charAt(0).toUpperCase() + category.slice(1) + "</h2>";
   
     // Get the images for the selected category
     var images = categoryImages[category];

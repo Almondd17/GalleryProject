@@ -114,7 +114,7 @@ body{
 
 @keyframes image-change {
     0%{
-        background-image: url(/images/buildings/buildings12);
+        background-image: url(/images/buildings/buildings12.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -134,7 +134,7 @@ body{
         background-position: center;
     }
     100%{
-        background-image: url(/images/buildings/buildings4);
+        background-image: url(/images/buildings/buildings4.jpg);
         background-size: cover;
         background-position: center;
     }
