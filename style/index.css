@@ -104,7 +104,7 @@ body{
     margin: 1.5% 5%;
     width: 115vh;
     height: 75vh;
-    background-image: url(/images/home-page/img6.jpg);
+    background-image: url(/images/buildings/buildings2);
     animation: image-change 20s infinite step-end;
     background-size: cover;
     background-position: center;
@@ -114,27 +114,27 @@ body{
 
 @keyframes image-change {
     0%{
-        background-image: url(/images/home-page/img1.jpg);
+        background-image: url(/images/buildings/buildings12);
         background-size: cover;
         background-position: center;
     }
     25%{
-        background-image: url(/images/home-page/img2.jpg);
+        background-image: url(/images/animals/animals4.jpg);
         background-size: cover;
         background-position: center;
     }
     50%{
-        background-image: url(/images/home-page/img3.jpg);
+        background-image: url(/images/portraits/person3.jpg);
         background-size: cover;
         background-position: center;
     }
     75%{
-        background-image: url(/images/home-page/img4.jpg);
+        background-image: url(/images/animals/animals5.jpg);
         background-size: cover;
         background-position: center;
     }
     100%{
-        background-image: url(/images/home-page/img5.jpg);
+        background-image: url(/images/buildings/buildings4);
         background-size: cover;
         background-position: center;
     }
