@@ -30,46 +30,6 @@ body {
     background-color: #666;
     border-radius: 4px;
   }
-  
-  .background-decoration {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-image: url("path/to/background-decoration.jpg");
-    background-repeat: repeat;
-    opacity: 0.1;
-  }
-  
-  .category-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  #category-select {
-    padding: 10px;
-    font-size: 18px;
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: center;
-  }
-  
-  .show-all-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 10px;
-  }
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -106,9 +66,9 @@ body {
     width: 350px; /* Adjust the size of each image */
     height: auto;
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 100px;
-    border: 2px solid #ccc; /* Add a border around the images */
+    border: 2px solid #cccccc; /* Add a border around the images */
     border-radius: 5px; /* Add rounded corners to the images */
 }
 .category-h2{

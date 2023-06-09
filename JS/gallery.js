@@ -39,28 +39,6 @@ var categoryImages = {
     ]
   };
   
-  function filterSelection() {
-    var select = document.getElementById("category-select");
-    var selectedCategory = select.options[select.selectedIndex].value;
-  
-    var galleryItems = document.getElementsByClassName("gallery-item");
-  
-    for (var i = 0; i < galleryItems.length; i++) {
-      if (galleryItems[i].classList.contains(selectedCategory)) {
-        galleryItems[i].style.display = "block";
-      } else {
-        galleryItems[i].style.display = "none";
-      }
-    }
-  }
-  
-  function showAllImages() {
-    var galleryItems = document.getElementsByClassName("gallery-item");
-  
-    for (var i = 0; i < galleryItems.length; i++) {
-      galleryItems[i].style.display = "block";
-    }
-  }
   
   function showCategoryContent(category) {
     var contentDiv = document.getElementById("content");
@@ -83,4 +61,6 @@ var categoryImages = {
     // Update the content div with the new category content
     contentDiv.innerHTML = categoryContent;
   }
+
+  
   
