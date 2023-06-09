@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,100&display=swap');
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,9 +16,10 @@ body {
   
   h1 {
     margin: 0;
-    flex-grow: 1;
+    flex-grow: 0.958;
     text-align: center;
-    font-size: 24px;
+    font-size: xx-large;
+    font-family: 'Raleway';
   }
   
   .home-button {
