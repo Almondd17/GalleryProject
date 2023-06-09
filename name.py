@@ -11,7 +11,7 @@ file_list.sort()
 # Rename each file with the desired format
 for i, filename in enumerate(file_list):
     # Generate the new filename
-    new_filename = f"object{i+1}"
+    new_filename = f"object{i+1}.jpg"
     # Get the full path of the file
     file_path = os.path.join(folder_path, filename)
     new_file_path = os.path.join(folder_path, new_filename)

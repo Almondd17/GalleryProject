@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Gallery</title>
+  <link rel="stylesheet" href="/style/gallery.css">
 </head>
 <body>
-    <header>
-        <h1>Doron's Art Gallery</h1>
-    </header>
+  <header>
+    <a href="../index.html" class="home-button">Home</a>
+    <h1>Gallery</h1>
+  </header>
+
+  <div class="background-decoration"></div>
+
+  <div class="category-list">
+    <select id="category-select" onchange="filterSelection()">
+      <option value="objects">Objects</option>
+      <option value="portraits">Portraits</option>
+      <option value="animals">Animals</option>
+      <option value="buildings">Buildings</option>
+    </select>
+    <button onclick="showAllImages()" class="show-all-button">Show All</button>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <div class="gallery-item objects" onclick="showCategoryContent('objects')">
+      <img src="/images/objects/object1.jpg" alt="Objects Image 1">
+    </div>
+    <div class="gallery-item portraits" onclick="showCategoryContent('portraits')">
+      <img src="/images/portraits/person1.jpg" alt="Portraits Image 1">
+    </div>
+    <div class="gallery-item animals" onclick="showCategoryContent('animals')">
+      <img src="/images/animals/animals1.jpg" alt="Animals Image 1">
+    </div>
+    <div class="gallery-item buildings" onclick="showCategoryContent('buildings')">
+      <img src="/images/buildings/buildings1.jpg" alt="Buildings Image 1">
+    </div>
+    <!-- Add more gallery items here -->
+  </div>
+
+  <div class="content" id="content">
+    <p>Select a category to view its content.</p>
+  </div>
+
+  <script src="/JS/gallery.js"></script>
 </body>
 </html>
