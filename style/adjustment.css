@@ -2,30 +2,35 @@
 
 /* Small screens */
 @media (max-width: 767px) {
+  /*index.css small screen*/
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
-
+  .switch-div{
+    align-self: flex-start;
+  }
   .navbar li {
-    display: block;
-    margin: 10px 0;
+    position: relative;
+    flex-direction: row;
     font-size: 20px;
   }
   .navbar #logo{
-    position: absolute;
-    width: 50%;
-    margin-left: 50%;
+    width: 80%;
+    align-self: flex-start;
   }
   .paragraph-container {
     width: 90%;
+    height: 60vh;
     margin: 20px auto;
   }
 
   .images-div {
-    width: 100%;
+    width: 80%;
     height: 40vh;
-    margin: 40px auto 20px;
+    margin: 10% auto;
+    position: relative;
+    align-items: center;
   }
 
   .paragraph {
@@ -36,11 +41,52 @@
   body {
     overflow-y: visible;
   }
+
 }
 
 /* Medium screens */
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Add any specific styles for medium screens here */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    max-height: 400px;
+  }
+  .switch-div{
+    align-self: flex-start;
+  }
+  .navbar li {
+    position: relative;
+    font-size: 30px;
+  }
+  .navbar #logo{
+    width: 60%;
+    align-self: flex-start;
+  }
+  .paragraph-container {
+    width: 40%;
+    height: 50vh;
+    margin: 20px auto;
+    margin-right: 10px;
+  }
+
+  .images-div {
+    width: 50%;
+    height: 50vh;
+    margin: 20px;
+    position: relative;
+    align-items: center;
+  }
+
+  .paragraph {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  body {
+    overflow-y: hidden;
+  }
+
 }
 
 /* Large screens */
