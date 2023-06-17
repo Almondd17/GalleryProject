@@ -55,6 +55,7 @@ body {
     transform: scale(1.05);
     border-color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
   }
   
   .gallery-item img {
@@ -76,4 +77,10 @@ body {
     font-family: cursive;
     font-weight: lighter;
     font-size: xx-large;
+}
+.tooltip{
+    position: absolute;
+    font-size: x-large;
+    color: white;
+    background: rgba(0, 0, 0, 0.552);
 }

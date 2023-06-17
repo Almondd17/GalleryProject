@@ -61,6 +61,7 @@ var categoryImages = {
     // Update the content div with the new category content
     contentDiv.innerHTML = categoryContent;
   }
+  
 
   
   

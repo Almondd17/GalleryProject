@@ -1,0 +1,49 @@
+/* Responsive styles */
+
+/* Small screens */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .navbar #logo{
+    position: absolute;
+    width: 50%;
+    margin-left: 50%;
+  }
+  .paragraph-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .images-div {
+    width: 100%;
+    height: 40vh;
+    margin: 40px auto 20px;
+  }
+
+  .paragraph {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  body {
+    overflow-y: visible;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Add any specific styles for medium screens here */
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  /* Add any specific styles for large screens here */
+}
