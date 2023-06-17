@@ -6,18 +6,20 @@
   .navbar {
     flex-direction: column;
     align-items: center;
+    margin-top: -100px;
   }
   .switch-div{
-    align-self: flex-start;
+    align-self: center;
   }
   .navbar li {
     position: relative;
     flex-direction: row;
-    font-size: 20px;
+    font-size: 25px;
   }
   .navbar #logo{
     width: 80%;
     align-self: flex-start;
+    visibility: hidden;
   }
   .paragraph-container {
     width: 90%;
@@ -41,7 +43,6 @@
   body {
     overflow-y: visible;
   }
-
 }
 
 /* Medium screens */
@@ -53,7 +54,7 @@
     max-height: 400px;
   }
   .switch-div{
-    align-self: flex-start;
+    align-self: center;
   }
   .navbar li {
     position: relative;
@@ -90,6 +91,6 @@
 }
 
 /* Large screens */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1080px){
   /* Add any specific styles for large screens here */
 }

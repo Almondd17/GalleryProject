@@ -155,6 +155,7 @@ input[type="checkbox"]{
     box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
     transition: .5s;
     margin-right: 30px;
+    
 }
 input:checked[type="checkbox"]{
     background: rgb(135, 221, 250);
@@ -174,4 +175,12 @@ input[type="checkbox"]:before{
 }
 input:checked[type="checkbox"]:before{
     left: 40px;
+}
+.switch-div{
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+}
+.switch-div input{
+    margin-top: 15px;
 }
