@@ -26,7 +26,13 @@ body, h1, h2, p, ul, li {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
   }
-  
+
+  p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
   nav ul {
     list-style-type: none;
     margin-top: 10px;
@@ -68,9 +74,5 @@ body, h1, h2, p, ul, li {
     text-align: center;
     padding: 10px;
   }
-  p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-family: 'Rajdhani', sans-serif;
-  }
+
   

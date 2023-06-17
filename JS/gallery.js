@@ -1,14 +1,14 @@
 var categoryImages = {
-    objects: [
-      "/images/objects/object1.jpg",
-      "/images/objects/object2.jpg",
-      "/images/objects/object3.jpg",
-      "/images/objects/object4.jpg",
-      "/images/objects/object5.jpg",
-      "/images/objects/object6.jpg",
-      "/images/objects/object7.jpg",
-      "/images/objects/object8.jpg",
-      "/images/objects/object9.jpg"
+    StillLife: [
+      "/images/Still-Life/SL1.jpg",
+      "/images/Still-Life/SL2.jpg",
+      "/images/Still-Life/SL3.jpg",
+      "/images/Still-Life/SL4.jpg",
+      "/images/Still-Life/SL5.jpg",
+      "/images/Still-Life/SL6.jpg",
+      "/images/Still-Life/SL7.jpg",
+      "/images/Still-Life/SL8.jpg",
+      "/images/Still-Life/SL9.jpg"
     ],
     portraits: [
       "/images/portraits/person1.jpg",
@@ -48,20 +48,59 @@ var categoryImages = {
   
     // Generate new content based on the selected category
     var categoryContent = "<h2 class='category-h2'>" + category.charAt(0).toUpperCase() + category.slice(1) + "</h2>";
-  
+    
     // Get the images for the selected category
     var images = categoryImages[category];
   
     if (images) {
       images.forEach(function(image) {
-        categoryContent += "<img class='category-image' src='" + image + "' alt='" + category + " Image'>";
+        categoryContent += "<img class='category-image' src='" + image + "' alt='" + category + " Image' data-category='" + category + "'>";
       });
     }
   
     // Update the content div with the new category content
     contentDiv.innerHTML = categoryContent;
+  
+    // Add click event listener to each image
+    var categoryImageElements = document.getElementsByClassName("category-image");
+    for (var i = 0; i < categoryImageElements.length; i++) {
+      categoryImageElements[i].addEventListener("click", zoomImage);
+    }
   }
   
-
+  function zoomImage(event) {
+    // Get the images for the selected category
+    var images = categoryImages[event.target.getAttribute("data-category")];
+  
+    // Create a container element for the enlarged image
+    var container = document.createElement("div");
+    container.classList.add("image-container");
+  
+    // Create the enlarged image element
+    var enlargedImage = document.createElement("img");
+    enlargedImage.classList.add("enlarged-image");
+    enlargedImage.src = event.target.src;
+  
+    // Append the elements to the container
+    container.appendChild(enlargedImage);
+  
+    // Append the container to the body
+    document.body.appendChild(container);
+  
+    // Hide the scrollbar on the body
+    document.body.style.overflow = "hidden";
+  
+    // Add a click event listener to the container to remove the enlarged image
+    container.addEventListener("click", function () {
+      document.body.removeChild(container);
+      document.body.style.overflow = "auto";
+    });
+  
+    // Prevent clicks inside the container from closing it
+    enlargedImage.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  }
+  
   
   
