@@ -69,38 +69,51 @@ var categoryImages = {
   }
   
   function zoomImage(event) {
-    // Get the images for the selected category
-    var images = categoryImages[event.target.getAttribute("data-category")];
+    var category = event.target.getAttribute("data-category");
+    var images = categoryImages[category];
+    var imageIndex = images.indexOf(event.target.src);
   
-    // Create a container element for the enlarged image
     var container = document.createElement("div");
     container.classList.add("image-container");
   
-    // Create the enlarged image element
+    var prevButton = document.createElement("button");
+    prevButton.classList.add("navigation-button", "prev-button");
+    prevButton.innerHTML = "&#10094;";
+  
+    var nextButton = document.createElement("button");
+    nextButton.classList.add("navigation-button", "next-button");
+    nextButton.innerHTML = "&#10095;";
+  
     var enlargedImage = document.createElement("img");
     enlargedImage.classList.add("enlarged-image");
     enlargedImage.src = event.target.src;
   
-    // Append the elements to the container
+    container.appendChild(prevButton);
     container.appendChild(enlargedImage);
-  
-    // Append the container to the body
+    container.appendChild(nextButton);
     document.body.appendChild(container);
   
-    // Hide the scrollbar on the body
     document.body.style.overflow = "hidden";
   
-    // Add a click event listener to the container to remove the enlarged image
     container.addEventListener("click", function () {
       document.body.removeChild(container);
       document.body.style.overflow = "auto";
     });
   
-    // Prevent clicks inside the container from closing it
     enlargedImage.addEventListener("click", function (event) {
       event.stopPropagation();
     });
+  
+    prevButton.addEventListener("click", function (event) {
+      event.stopPropagation();
+      imageIndex = (imageIndex - 1 + images.length) % images.length;
+      enlargedImage.src = images[imageIndex];
+    });
+  
+    nextButton.addEventListener("click", function (event) {
+      event.stopPropagation();
+      imageIndex = (imageIndex + 1) % images.length;
+      enlargedImage.src = images[imageIndex];
+    });
   }
-  
-  
   
