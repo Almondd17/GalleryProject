@@ -22,7 +22,7 @@
       
       <main>
         <div>
-          <h2>Still Life Paintings</h2>
+          <h2>Still Life Paintings</h2> <div class="lan-switch"><input type="checkbox" id="languageSwitch"></div>
           <p>"Still life" is a genre in visual art, primarily in painting, that depicts various objects—natural or man-made, such as plants, flowers, fruits, food items, and household items. The accessibility of these objects allows the artist to work within their studio, their private space, and enables them to have full control over the chosen subject. The artist determines everything, selecting the objects, composing the scene, choosing the angle of view, and establishing the placement and atmosphere. The artist creates the expression of 'beauty' for themselves, hence the term 'still life,' which is closely related to the fundamentals of painting. In its very form, it resembles a grid (an element of a sort of network) that organizes the composition into order and aesthetics.</p>
         </div>
     
@@ -38,5 +38,38 @@
       <footer>
         <p>&copy; 2023 Doron Mirsky. All rights reserved.</p>
       </footer>
+      <script>
+// JavaScript code
+const languageSwitch = document.getElementById('languageSwitch');
+        const body = document.body;
+        const header = document.querySelector('header');
+        const main = document.querySelector('main');
+        const h1 = document.querySelector('h1');
+        const h2Elements = document.querySelectorAll('h2');
+        const paragraphs = document.querySelectorAll('p');
+        const footer = document.querySelector('footer');
+
+        languageSwitch.addEventListener('change', function() {
+            if (languageSwitch.checked) {
+                body.classList.add('dark-theme');
+                body.classList.remove('light-theme');
+                header.style.backgroundColor = '#222';
+                main.style.backgroundColor = '#222';
+                h1.style.color = '#fff';
+                h2Elements.forEach(h2 => h2.style.color = '#fff');
+                paragraphs.forEach(p => p.style.color = '#fff');
+                footer.style.backgroundColor = '#777';
+            } else {
+                body.classList.remove('dark-theme');
+                body.classList.add('light-theme');
+                header.style.backgroundColor = '#f2f2f2';
+                main.style.backgroundColor = '#fff';
+                h1.style.color = '#000';
+                h2Elements.forEach(h2 => h2.style.color = '#000');
+                paragraphs.forEach(p => p.style.color = '#000');
+                footer.style.backgroundColor = '#333';
+            }
+        });
+    </script>
 </body>
 </html>

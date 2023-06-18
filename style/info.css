@@ -14,6 +14,7 @@ body, h1, h2, p, ul, li {
   }
   
   header {
+    position: relative;
     background-color: #f2f2f2;
     padding: 20px;
     display: flex;
@@ -25,6 +26,8 @@ body, h1, h2, p, ul, li {
     font-size: 34px;
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
+    position: relative; /* Add this line to make the h1 a positioned element */
+    z-index: 1; /* Add this line to ensure the h1 is displayed above the language switch container */
   }
 
   p {
@@ -60,12 +63,15 @@ body, h1, h2, p, ul, li {
   
   main {
     padding: 20px;
+    position: relative;
   }
 
   main h2 {
     font-size: 30px;
     margin-bottom: 10px;
     font-family: 'Kalam', cursive;
+    display: inline-block; /* Add this line to make the h2 an inline-block element */
+    margin-right: 10px; /* Adjust the margin value as needed to create spacing between the h2 and the language switch container */
   }
   
   footer {
@@ -74,5 +80,45 @@ body, h1, h2, p, ul, li {
     text-align: center;
     padding: 10px;
   }
-
+  input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+  input[type="checkbox"]{
+    position: relative;
+    width: 50px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+    margin-right: 30px;
+    
+}
+  input:checked[type="checkbox"]{
+    background: rgb(135, 221, 250);
+}
+  input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+  input:checked[type="checkbox"]:before{
+    left: 25px;
+  }
+  .lan-switch {
+    position: absolute; /* Add this line to make the language switch container positioned */    
+    right: 10px; /* Adjust the right value as needed to position the container */
+    top: 50px;
+    transform: translateY(-50%); /* Add this line to vertically center the container */
+  }
   
