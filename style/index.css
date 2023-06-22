@@ -107,7 +107,7 @@ body{
     margin: 1.5% 5%;
     width: 115vh;
     height: 75vh;
-    background-image: url(/images/buildings/buildings2);
+    background-image: url(/images/buildings/buildings2.jpg);
     animation: image-change 20s infinite step-end;
     background-size: cover;
     background-position: center;

@@ -45,6 +45,12 @@
   body {
     overflow-y: visible;
   }
+  /*information page menu buttons*/
+  .inf-menu li{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+  }
 }
 
 /* Medium screens */
@@ -93,8 +99,26 @@
   }
 
 }
+/* Screens larger than medium screens, but not full screen */
+@media (min-width: 1024px) and (max-width: 1550px) {
+  .navbar {
+    /* Your styles */
+  }
+  .switch-div {
+    font-size: 100%;
+    align-self: auto;
+    
+  }
+  .paragraph-container {
+    width: 35%;
+  }
 
-/* Large screens */
-@media (min-width: 1024px) and (max-width: 1080px){
-  /* Add any specific styles for large screens here */
+  .images-div {
+    width: 50%;
+  }
+
+  .paragraph {
+    /* Your styles */
+  }
 }
+/*larger screens is the default css styles*/
