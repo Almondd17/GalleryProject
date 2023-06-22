@@ -39,6 +39,47 @@ var categoryImages = {
     ]
   };
   
+  var imageDescriptions = {
+    StillLife: [
+      "Description 1 for Still Life Image 1",
+      "Description 2 for Still Life Image 2",
+      "Description 3 for Still Life Image 3",
+      "Description 4 for Still Life Image 4",
+      "Description 5 for Still Life Image 5",
+      "Description 6 for Still Life Image 6",
+      "Description 7 for Still Life Image 7",
+      "Description 8 for Still Life Image 8",
+      "Description 9 for Still Life Image 9"
+    ],
+    portraits: [
+      "Description 1 for Portraits Image 1",
+      "Description 2 for Portraits Image 2",
+      "Description 3 for Portraits Image 3"
+    ],
+    animals: [
+      "Description 1 for Animals Image 1",
+      "Description 2 for Animals Image 2",
+      "Description 3 for Animals Image 3",
+      "Description 4 for Animals Image 4",
+      "Description 5 for Animals Image 5"
+    ],
+    buildings: [
+      "Description 1 for Buildings Image 1",
+      "Description 2 for Buildings Image 2",
+      "Description 3 for Buildings Image 3",
+      "Description 4 for Buildings Image 4",
+      "Description 5 for Buildings Image 5",
+      "Description 6 for Buildings Image 6",
+      "Description 7 for Buildings Image 7",
+      "Description 8 for Buildings Image 8",
+      "Description 9 for Buildings Image 9",
+      "Description 10 for Buildings Image 10",
+      "Description 11 for Buildings Image 11",
+      "Description 12 for Buildings Image 12",
+      "Description 13 for Buildings Image 13"
+    ]
+  };
+  
   
   function showCategoryContent(category) {
     var contentDiv = document.getElementById("content");

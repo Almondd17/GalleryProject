@@ -37,9 +37,11 @@
 
   .paragraph {
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 60px;
   }
-
+  .switch-div{
+    align-self: flex-end;
+  }
   body {
     overflow-y: visible;
   }
@@ -81,9 +83,11 @@
 
   .paragraph {
     font-size: 24px;
-    margin-top: 20px;
+    margin-top: 50px;
   }
-
+  .switch-div{
+    align-self: flex-start;
+  }
   body {
     overflow-y: hidden;
   }

@@ -72,10 +72,10 @@ body {
     margin-bottom: 100px;
     border: 2px solid #cccccc; /* Add a border around the images */
     border-radius: 5px; /* Add rounded corners to the images */
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .category-image:hover{
-    box-shadow: 0 0 5px 5px coral;
+    box-shadow: 0 0 2px 5px rgb(195, 0, 255);
 }
 .category-h2{
     text-align: center;
