@@ -1,82 +1,131 @@
 var categoryImages = {
     StillLife: [
-      "/images/Still-Life/SL1.jpg",
-      "/images/Still-Life/SL2.jpg",
-      "/images/Still-Life/SL3.jpg",
-      "/images/Still-Life/SL4.jpg",
-      "/images/Still-Life/SL5.jpg",
-      "/images/Still-Life/SL6.jpg",
-      "/images/Still-Life/SL7.jpg",
-      "/images/Still-Life/SL8.jpg",
-      "/images/Still-Life/SL9.jpg"
+      {
+        path: "/images/Still-Life/SL1.jpg",
+        description: "1111111"
+      },
+      {
+        path: "/images/Still-Life/SL2.jpg",
+        description: "2222222"
+      },
+      {
+        path: "/images/Still-Life/SL3.jpg",
+        description: "333333"
+      },
+      {
+        path: "/images/Still-Life/SL4.jpg",
+        description: ""
+      },
+      {
+        path: "/images/Still-Life/SL5.jpg",
+        description: ""
+      },
+      {
+        path: "/images/Still-Life/SL6.jpg",
+        description: ""
+      },
+      {
+        path: "/images/Still-Life/SL7.jpg",
+        description: ""
+      },
+      {
+        path: "/images/Still-Life/SL8.jpg",
+        description: ""
+      },
+      {
+        path: "/images/Still-Life/SL9.jpg",
+        description: ""
+      },
     ],
     portraits: [
-      "/images/portraits/person1.jpg",
-      "/images/portraits/person2.jpg",
-      "/images/portraits/person3.jpg"
+      {
+        path: "/images/portraits/person1.jpg",
+        description: ""
+      },
+      {
+        path: "/images/portraits/person2.jpg",
+        description: ""
+      },
+      {
+        path: "/images/portraits/person3.jpg",
+        description: ""
+      },
     ],
     animals: [
-      "/images/animals/animals1.jpg",
-      "/images/animals/animals2.jpg",
-      "/images/animals/animals3.jpg",
-      "/images/animals/animals4.jpg",
-      "/images/animals/animals5.jpg"
+      {
+        path: "/images/animals/animals1.jpg",
+        description: ""
+      },
+      {
+        path: "/images/animals/animals2.jpg",
+        description: ""
+      },
+      {
+        path: "/images/animals/animals3.jpg",
+        description: ""
+      },
+      {
+        path: "/images/animals/animals4.jpg",
+        description: ""
+      },
+      {
+        path: "/images/animals/animals5.jpg",
+        description: ""
+      },
     ],
     buildings: [
-      "/images/buildings/buildings1.jpg",
-      "/images/buildings/buildings2.jpg",
-      "/images/buildings/buildings3.jpg",
-      "/images/buildings/buildings4.jpg",
-      "/images/buildings/buildings5.jpg",
-      "/images/buildings/buildings6.jpg",
-      "/images/buildings/buildings7.jpg",
-      "/images/buildings/buildings8.jpg",
-      "/images/buildings/buildings9.jpg",
-      "/images/buildings/buildings10.jpg",
-      "/images/buildings/buildings11.jpg",
-      "/images/buildings/buildings12.jpg",
-      "/images/buildings/buildings13.jpg"
-    ]
-  };
-  
-  var imageDescriptions = {
-    StillLife: [
-      "Description 1 for Still Life Image 1",
-      "Description 2 for Still Life Image 2",
-      "Description 3 for Still Life Image 3",
-      "Description 4 for Still Life Image 4",
-      "Description 5 for Still Life Image 5",
-      "Description 6 for Still Life Image 6",
-      "Description 7 for Still Life Image 7",
-      "Description 8 for Still Life Image 8",
-      "Description 9 for Still Life Image 9"
-    ],
-    portraits: [
-      "Description 1 for Portraits Image 1",
-      "Description 2 for Portraits Image 2",
-      "Description 3 for Portraits Image 3"
-    ],
-    animals: [
-      "Description 1 for Animals Image 1",
-      "Description 2 for Animals Image 2",
-      "Description 3 for Animals Image 3",
-      "Description 4 for Animals Image 4",
-      "Description 5 for Animals Image 5"
-    ],
-    buildings: [
-      "Description 1 for Buildings Image 1",
-      "Description 2 for Buildings Image 2",
-      "Description 3 for Buildings Image 3",
-      "Description 4 for Buildings Image 4",
-      "Description 5 for Buildings Image 5",
-      "Description 6 for Buildings Image 6",
-      "Description 7 for Buildings Image 7",
-      "Description 8 for Buildings Image 8",
-      "Description 9 for Buildings Image 9",
-      "Description 10 for Buildings Image 10",
-      "Description 11 for Buildings Image 11",
-      "Description 12 for Buildings Image 12",
-      "Description 13 for Buildings Image 13"
+      {
+        path: "/images/buildings/buildings1.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings2.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings3.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings4.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings5.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings6.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings7.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings8.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings9.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings10.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings11.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings12.jpg",
+        description: ""
+      },
+      {
+        path: "/images/buildings/buildings13.jpg",
+        description: ""
+      },
     ]
   };
   
@@ -92,10 +141,10 @@ var categoryImages = {
     
     // Get the images for the selected category
     var images = categoryImages[category];
-  
     if (images) {
       images.forEach(function(image) {
-        categoryContent += "<img class='category-image' src='" + image + "' alt='" + category + " Image' data-category='" + category + "'>";
+        console.log(image.path)
+        categoryContent += "<img class='category-image' src='" + image.path + "' alt='" + category + " Image' data-category='" + category + "'>";
       });
     }
   
@@ -148,13 +197,13 @@ var categoryImages = {
     prevButton.addEventListener("click", function (event) {
       event.stopPropagation();
       imageIndex = (imageIndex - 1 + images.length) % images.length;
-      enlargedImage.src = images[imageIndex];
+      enlargedImage.src = images[imageIndex].path;
     });
   
     nextButton.addEventListener("click", function (event) {
       event.stopPropagation();
       imageIndex = (imageIndex + 1) % images.length;
-      enlargedImage.src = images[imageIndex];
+      enlargedImage.src = images[imageIndex].path;
     });
   }
   

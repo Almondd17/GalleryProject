@@ -64,6 +64,7 @@ body {
     height: 100%;
     object-fit: cover;
   }
+  
   .category-image {
     width: 350px; /* Adjust the size of each image */
     height: auto;
@@ -111,18 +112,6 @@ body {
   justify-content: center;
   align-items: center;
   overflow-y: auto;
-}
-
-.image-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .enlarged-image {
