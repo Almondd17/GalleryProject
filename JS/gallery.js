@@ -144,7 +144,7 @@ var categoryImages = {
     if (images) {
       images.forEach(function(image) {
         console.log(image.path)
-        categoryContent += "<img class='category-image' src='" + image.path + "' alt='" + category + " Image' data-category='" + category + "'>";
+        categoryContent += "<img  class='category-image' src='" + image.path + "' alt='" + category + " Image' data-category='" + category + "'>";
       });
     }
   
@@ -178,9 +178,24 @@ var categoryImages = {
     enlargedImage.classList.add("enlarged-image");
     enlargedImage.src = event.target.src;
   
+    
+    var descriptionSpan = document.createElement("span");
+    descriptionSpan.classList.add("image-description");
+    descriptionSpan.innerText = "scroll to see more pictures!";
+    var matchedIndex = -1; // Variable to store the matched index, initially set to -1
+
+    for (var i = 0; i < images.length; i++) {
+      if (images[i].path === imageIndex) {
+        matchedIndex = i;
+        descriptionSpan.innerText = images[i].description;
+        break;
+      }
+    }
+    
     container.appendChild(prevButton);
     container.appendChild(enlargedImage);
     container.appendChild(nextButton);
+    container.appendChild(descriptionSpan);
     document.body.appendChild(container);
   
     document.body.style.overflow = "hidden";
@@ -198,12 +213,14 @@ var categoryImages = {
       event.stopPropagation();
       imageIndex = (imageIndex - 1 + images.length) % images.length;
       enlargedImage.src = images[imageIndex].path;
+      descriptionSpan.innerText = images[imageIndex].description;
     });
   
     nextButton.addEventListener("click", function (event) {
       event.stopPropagation();
       imageIndex = (imageIndex + 1) % images.length;
       enlargedImage.src = images[imageIndex].path;
+      descriptionSpan.innerText = images[imageIndex].description;
     });
   }
   

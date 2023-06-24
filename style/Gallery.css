@@ -64,7 +64,6 @@ body {
     height: 100%;
     object-fit: cover;
   }
-  
   .category-image {
     width: 350px; /* Adjust the size of each image */
     height: auto;
@@ -74,6 +73,11 @@ body {
     border: 2px solid #cccccc; /* Add a border around the images */
     border-radius: 5px; /* Add rounded corners to the images */
     transition: 0.2s;
+}
+.img-des{
+    background-color: black;
+    font-size: 23px;
+    top: 0;
 }
 .category-image:hover{
     box-shadow: 0 0 2px 5px rgb(195, 0, 255);
@@ -154,4 +158,15 @@ body {
   'GRAD' 0,
   'opsz' 48
 }
+.image-description {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 34px;
+}
+
 /* Add any additional styling as needed */
