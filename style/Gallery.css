@@ -33,7 +33,7 @@ body {
   }
   .gallery {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     margin: 0 auto;
     max-width: 800px;
@@ -42,7 +42,7 @@ body {
   
   .gallery-item {
     width: 200px;
-    height: 200px;
+    height: 170px;
     margin: 10px;
     overflow: hidden;
     position: relative;
@@ -88,12 +88,34 @@ body {
     font-size: xx-large;
     letter-spacing: 5px;
 }
-.tooltip{
-    position: absolute;
-    font-size: x-large;
-    color: white;
-    background: rgba(0, 0, 0, 0.552);
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 .enlarged-image {
   max-width: 90%;
   max-height: 90%;
@@ -160,13 +182,15 @@ body {
 }
 .image-description {
   position: absolute;
-  bottom: 45px;
+  bottom: 7%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 5px 10px;
-  font-size: 34px;
+  font-size: 30px;
+  font-family: 'kalam', cursive;
+  border-radius: 15px;
 }
 
 /* Add any additional styling as needed */

@@ -61,9 +61,6 @@
     align-items: center;
     max-height: 400px;
   }
-  .switch-div{
-    align-self: center;
-  }
   .navbar li {
     position: relative;
     font-size: 30px;
@@ -73,15 +70,15 @@
     align-self: flex-start;
   }
   .paragraph-container {
-    width: 40%;
-    height: 50vh;
+    width: 50%;
+    height: 60vh;
     margin: 20px auto;
     margin-right: 10px;
   }
 
   .images-div {
-    width: 50%;
-    height: 50vh;
+    width: 40%;
+    height: 60vh;
     margin: 20px;
     position: relative;
     align-items: center;
@@ -92,7 +89,7 @@
     margin-top: 50px;
   }
   .switch-div{
-    align-self: flex-start;
+    right: 0;
   }
   body {
     overflow-y: hidden;
@@ -106,15 +103,14 @@
   }
   .switch-div {
     font-size: 100%;
-    align-self: auto;
-    
+    align-self: center;
   }
   .paragraph-container {
-    width: 35%;
+    width: 40%;
   }
 
   .images-div {
-    width: 50%;
+    width: 45%;
   }
 
   .paragraph {
