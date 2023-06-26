@@ -222,6 +222,43 @@ var categoryImages = {
       descriptionSpan.innerText = images[imageIndex].description;
     });
   }
+  function tooltip() {
+    var galleryItems = document.getElementsByClassName("gallery-item");
+  
+    for (var i = 0; i < galleryItems.length; i++) {
+      var galleryItem = galleryItems[i];
+      var tooltipValue = galleryItem.getAttribute('data-tooltip');
+  
+      // Create tooltip element
+      var tooltip = document.createElement("div");
+      tooltip.classList.add("tooltip");
+      tooltip.textContent = tooltipValue;
+  
+      // Add tooltip to gallery item
+      galleryItem.appendChild(tooltip);
+  
+      // Attach event listeners to gallery item
+      galleryItem.addEventListener('mouseenter', showTooltip(tooltip));
+      galleryItem.addEventListener('mouseleave', hideTooltip(tooltip));
+    }
+  
+    function showTooltip(tooltip) {
+      return function () {
+        tooltip.style.display = 'block';
+      };
+    }
+  
+    function hideTooltip(tooltip) {
+      return function () {
+        tooltip.style.display = 'none';
+      };
+    }
+  }
+  
+  // Call the tooltip function after the DOM is loaded
+  document.addEventListener("DOMContentLoaded", tooltip);
+  
+  
   
 
   
