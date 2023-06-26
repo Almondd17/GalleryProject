@@ -129,10 +129,6 @@ var categoryImages = {
     ]
   };
   
-  window.onload = function() {
-    toolTip();
-  };
-  
   function showCategoryContent(category) {
     var contentDiv = document.getElementById("content");
   
@@ -224,31 +220,6 @@ var categoryImages = {
       imageIndex = (imageIndex + 1) % images.length;
       enlargedImage.src = images[imageIndex].path;
       descriptionSpan.innerText = images[imageIndex].description;
-    });
-  }
-  function toolTip() {
-    var galleryItems = document.getElementsByClassName("gallery-item");
-    var tooltip = document.createElement("span");
-    tooltip.classList.add("tooltiptext");
-
-    for (var i = 0; i < galleryItems.length; i++) {
-      console.log();
-      var category = galleryItems[i].getAttribute("data-category");
-      tooltip.innerText = category;
-    }
-    // Position the tooltip relative to the mouse cursor
-    galleryItems.addEventListener("mousemove", function(event) {
-      tooltip.style.top = (event.clientY + 10) + "px";
-      tooltip.style.left = (event.clientX + 10) + "px";
-    });
-
-    // Show and hide the tooltip on mouse enter/leave
-    galleryItems.addEventListener("mouseenter", function() {
-      tooltip.style.display = "block";
-    });
-
-    galleryItems.addEventListener("mouseleave", function() {
-      tooltip.style.display = "none";
     });
   }
   
