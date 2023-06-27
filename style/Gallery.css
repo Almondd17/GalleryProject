@@ -92,11 +92,7 @@ body {
     border-radius: 5px; /* Add rounded corners to the images */
     transition: 0.2s;
 }
-.img-des{
-    background-color: black;
-    font-size: 23px;
-    top: 0;
-}
+
 .category-image:hover{
     box-shadow: 0 0 2px 5px rgb(195, 0, 255);
 }
@@ -182,6 +178,9 @@ body {
   font-size: 30px;
   font-family: 'kalam', cursive;
   border-radius: 15px;
+  text-align: center;
+  width: 25%;
+  word-wrap: break-word;
 }
 
 /* Add any additional styling as needed */

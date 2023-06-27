@@ -2,7 +2,7 @@ var categoryImages = {
     StillLife: [
       {
         path: "/images/Still-Life/SL1.jpg",
-        description: "example description 1"
+        description: "A kettle, vase, and dish placed on a red table against a backdrop of paintings on the wall."
       },
       {
         path: "/images/Still-Life/SL2.jpg",
