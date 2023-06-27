@@ -6,35 +6,35 @@ var categoryImages = {
       },
       {
         path: "/images/Still-Life/SL2.jpg",
-        description: "2222222"
+        description: "Green plant in a blue vase against a purple backdrop."
       },
       {
         path: "/images/Still-Life/SL3.jpg",
-        description: "333333"
+        description: "Colorful bowls and utensils against a modern background."
       },
       {
         path: "/images/Still-Life/SL4.jpg",
-        description: ""
+        description: "Three fruits and a lidded pitcher in a blue bowl on a red background."
       },
       {
         path: "/images/Still-Life/SL5.jpg",
-        description: ""
+        description: "Delicate pink flowers and vibrant green leaves adorning branches."
       },
       {
         path: "/images/Still-Life/SL6.jpg",
-        description: ""
+        description: "Assorted fruits on a blue tray with a prominent wine bottle."
       },
       {
         path: "/images/Still-Life/SL7.jpg",
-        description: ""
+        description: "A red kettle and glass paired with a green bowl."
       },
       {
         path: "/images/Still-Life/SL8.jpg",
-        description: ""
+        description: "A brown pot showcasing a lush green plant adorned with vibrant pink roses."
       },
       {
         path: "/images/Still-Life/SL9.jpg",
-        description: ""
+        description: "Captivating yellow tulips in a brown pot against a serene blue background."
       },
     ],
     portraits: [
@@ -180,7 +180,7 @@ var categoryImages = {
     
     var descriptionSpan = document.createElement("span");
     descriptionSpan.classList.add("image-description");
-    descriptionSpan.innerText = "scroll to see more pictures!";
+    descriptionSpan.innerText = "Scroll to see more paintings!";
     var matchedIndex = -1; // Variable to store the matched index, initially set to -1
 
     for (var i = 0; i < images.length; i++) {
@@ -222,6 +222,7 @@ var categoryImages = {
       descriptionSpan.innerText = images[imageIndex].description;
     });
   }
+  
   function tooltip() {
     var galleryItems = document.getElementsByClassName("gallery-item");
   
