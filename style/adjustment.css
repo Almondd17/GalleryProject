@@ -51,6 +51,15 @@
     flex-direction: row;
     margin: 10px 10px;
   }
+  /*galley page*/
+  .image-description{
+    font-size: 17px;
+    width: 60%;
+    bottom: 25%;
+  }
+  .prev-button{
+    z-index: 9000;
+  }
 }
 
 /* Medium screens */
@@ -94,7 +103,12 @@
   body {
     overflow-y: hidden;
   }
-
+   /*galley page*/
+   .image-description{
+    font-size: 20px;
+    width: 40%;
+    bottom: 13%;
+  }
 }
 /* Screens larger than medium screens, but not full screen */
 @media (min-width: 1024px) and (max-width: 1550px) {

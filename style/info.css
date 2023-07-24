@@ -11,6 +11,7 @@ body, h1, h2, p, ul, li {
   body {
     font-family: Arial, sans-serif;
     line-height: 2;
+    overflow: hidden;
   }
   
   header {
@@ -64,6 +65,7 @@ body, h1, h2, p, ul, li {
   main {
     padding: 20px;
     position: relative;
+    height: 75ch;
   }
 
   main h2 {
@@ -78,8 +80,7 @@ body, h1, h2, p, ul, li {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    height: 60px;
+    height: 30ch;
   }
   input[type="checkbox"]:hover{
     cursor: pointer;
@@ -116,10 +117,12 @@ body, h1, h2, p, ul, li {
   input:checked[type="checkbox"]:before{
     left: 25px;
   }
-  .lan-switch {
+  .SwitchClass {
     position: absolute; /* Add this line to make the language switch container positioned */    
     right: 10px; /* Adjust the right value as needed to position the container */
     top: 50px;
     transform: translateY(-50%); /* Add this line to vertically center the container */
   }
-  
+  .text-right {
+    text-align: right;
+  }

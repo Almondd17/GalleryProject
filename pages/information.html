@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+      <header>
         <h1>Doron Mirsky</h1>
         <nav class="inf-menu">
           <ul>
@@ -22,54 +22,25 @@
       
       <main>
         <div>
-          <h2>Still Life Paintings</h2> <div class="lan-switch"><input type="checkbox" id="languageSwitch"></div>
-          <p>"Still life" is a genre in visual art, primarily in painting, that depicts various objects—natural or man-made, such as plants, flowers, fruits, food items, and household items. The accessibility of these objects allows the artist to work within their studio, their private space, and enables them to have full control over the chosen subject. The artist determines everything, selecting the objects, composing the scene, choosing the angle of view, and establishing the placement and atmosphere. The artist creates the expression of 'beauty' for themselves, hence the term 'still life,' which is closely related to the fundamentals of painting. In its very form, it resembles a grid (an element of a sort of network) that organizes the composition into order and aesthetics.</p>
+          <h2 data-lang="en">Still Life Paintings</h2>
+          <div class="SwitchClass">
+            <input type="checkbox" id="languageSwitch"><input type="checkbox" id="themeSwitch">
+          </div>
+          <p data-lang="en">"Still life" is a genre in visual art, primarily in painting, that depicts various objects—natural or man-made, such as plants, flowers, fruits, food items, and household items. The accessibility of these objects allows the artist to work within their studio, their private space, and enables them to have full control over the chosen subject. The artist determines everything, selecting the objects, composing the scene, choosing the angle of view, and establishing the placement and atmosphere. The artist creates the expression of 'beauty' for themselves, hence the term 'still life,' which is closely related to the fundamentals of painting. In its very form, it resembles a grid (an element of a sort of network) that organizes the composition into order and aesthetics.</p>
         </div>
-    
+      
         <div>
-          <h2>About Doron</h2>
-          <p>Doron Mirsky is interested in various subjects, including science, art, reading books, and language learning. He freely speaks six languages. Doron has been drawing since a young age, and among the topics he enjoys illustrating, we have chosen to present his 'still life' paintings of homes and birds in this exhibition.</p>
-          <p>Doron is particularly fascinated by architecture, especially ancient churches. During his travels around the world, he discovers a special interest in old churches. A special experience for him was visiting St. Peter's Basilica in Rome.</p>
-          <p>Doron loves painting houses. His paintings are characterized by wide surfaces and bold colors. Another direction in his artwork involves animal paintings, especially birds. Birds symbolize both beauty and a longing for freedom and liberation.</p>
-          <p>In his still life paintings, Doron often emphasizes flowers and various objects. In these paintings, Doron combines beauty with order and organization. Through his paintings and the concept of beauty, he observes and successfully creates order and logic within the world.</p>
+          <h2 data-lang="en">About Doron</h2>
+          <p data-lang="en">Doron Mirsky is interested in various subjects, including science, art, reading books, and language learning. He freely speaks six languages. Doron has been drawing since a young age, and among the topics he enjoys illustrating, we have chosen to present his 'still life' paintings of homes and birds in this exhibition.</p>
+          <p data-lang="en">Doron is particularly fascinated by architecture, especially ancient churches. During his travels around the world, he discovers a special interest in old churches. A special experience for him was visiting St. Peter's Basilica in Rome.</p>
+          <p data-lang="en">Doron loves painting houses. His paintings are characterized by wide surfaces and bold colors. Another direction in his artwork involves animal paintings, especially birds. Birds symbolize both beauty and a longing for freedom and liberation.</p>
+          <p data-lang="en">In his still life paintings, Doron often emphasizes flowers and various objects. In these paintings, Doron combines beauty with order and organization. Through his paintings and the concept of beauty, he observes and successfully creates order and logic within the world.</p>
         </div>
-      </main>
-    
+      </main>      
+
       <footer>
         <span>&copy; 2023 Doron Mirsky. All rights reserved.</span>
       </footer>
-      <script>
-      // JavaScript code
-        const languageSwitch = document.getElementById('languageSwitch');
-        const body = document.body;
-        const header = document.querySelector('header');
-        const main = document.querySelector('main');
-        const h1 = document.querySelector('h1');
-        const h2Elements = document.querySelectorAll('h2');
-        const paragraphs = document.querySelectorAll('p');
-        const footer = document.querySelector('footer');
-
-        languageSwitch.addEventListener('change', function() {
-            if (languageSwitch.checked) {
-                body.classList.add('dark-theme');
-                body.classList.remove('light-theme');
-                header.style.backgroundColor = '#222';
-                main.style.backgroundColor = '#222';
-                h1.style.color = '#fff';
-                h2Elements.forEach(h2 => h2.style.color = '#fff');
-                paragraphs.forEach(p => p.style.color = '#fff');
-                footer.style.backgroundColor = '#777';
-            } else {
-                body.classList.remove('dark-theme');
-                body.classList.add('light-theme');
-                header.style.backgroundColor = '#f2f2f2';
-                main.style.backgroundColor = '#fff';
-                h1.style.color = '#000';
-                h2Elements.forEach(h2 => h2.style.color = '#000');
-                paragraphs.forEach(p => p.style.color = '#000');
-                footer.style.backgroundColor = '#333';
-            }
-        });
-    </script>
+      <script src="/JS/info.js"></script>
 </body>
 </html>
