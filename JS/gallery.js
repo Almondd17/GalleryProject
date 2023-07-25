@@ -130,6 +130,7 @@ var categoryImages = {
   };
   
   function showCategoryContent(category) {
+    console.clear();
     var contentDiv = document.getElementById("content");
   
     // Clear previous content

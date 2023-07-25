@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@300&display=swap');
 /* Reset some default styles */
 body, h1, h2, p, ul, li {
     margin: 0;
@@ -72,7 +73,6 @@ body, h1, h2, p, ul, li {
     font-size: 30px;
     margin-bottom: 10px;
     font-family: 'Kalam', cursive;
-    display: inline-block; /* Add this line to make the h2 an inline-block element */
     margin-right: 10px; /* Adjust the margin value as needed to create spacing between the h2 and the language switch container */
   }
   
@@ -123,6 +123,13 @@ body, h1, h2, p, ul, li {
     top: 50px;
     transform: translateY(-50%); /* Add this line to vertically center the container */
   }
-  .text-right {
-    text-align: right;
-  }
+/* CSS for the right-to-left layout */
+.rtl-text {
+  direction: rtl;
+  text-align: center;
+  font-family: 'IBM Plex Sans Hebrew', sans-serif;
+}
+
+
+
+  

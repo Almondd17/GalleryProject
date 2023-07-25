@@ -74,6 +74,12 @@ const toggleLanguage = () => {
         const key = element.dataset.lang; // Use the data-lang attribute as the key
         const translation = translations[key] ? translations[key][lang] || key : key;
         element.textContent = translation;
+        //change the text css by adding a class
+        if (lang === 'he') {
+          element.classList.add('rtl-text');
+        } else {
+          element.classList.remove('rtl-text');
+        }    
     });
 };
 
