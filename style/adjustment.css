@@ -46,10 +46,18 @@
     overflow-y: visible;
   }
   /*information page menu buttons*/
+  body{
+    overflow-x: hidden;
+  }
   .inf-menu li{
     display: flex;
     flex-direction: row;
     margin: 10px 10px;
+  }
+  .SwitchClass{
+    position: absolute;
+    margin-right: 0;
+    width: 15%;
   }
   /*galley page*/
   .image-description{
@@ -110,9 +118,6 @@
   }
   .switch-div{
     right: 0;
-  }
-  body {
-    overflow-y: hidden;
   }
    /*galley page*/
    .image-description{

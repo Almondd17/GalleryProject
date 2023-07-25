@@ -2,17 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@300&display=swap');
-/* Reset some default styles */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-  }
+  /* Reset some default styles */
+  body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
   
   /* Global Styles */
   body {
     font-family: Arial, sans-serif;
     line-height: 2;
-    overflow: hidden;
   }
   
   header {
@@ -66,7 +65,7 @@ body, h1, h2, p, ul, li {
   main {
     padding: 20px;
     position: relative;
-    height: 82ch;
+    height: 70%;
   }
 
   main h2 {
@@ -80,7 +79,7 @@ body, h1, h2, p, ul, li {
     background-color: #333;
     color: #fff;
     text-align: center;
-    height: 30ch;
+    height: 10ch;
   }
   input[type="checkbox"]:hover{
     cursor: pointer;
