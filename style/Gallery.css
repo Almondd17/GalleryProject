@@ -128,13 +128,13 @@ body {
 }
 
 .enlarged-image {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 80%;
+  max-height: 80%;
 }
 
 .navigation-button {
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -169,7 +169,7 @@ body {
 }
 .image-description {
   position: absolute;
-  bottom: 7%;
+  bottom: 0%;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.7);
@@ -179,7 +179,7 @@ body {
   font-family: 'kalam', cursive;
   border-radius: 15px;
   text-align: center;
-  width: 25%;
+  width: max-content;
   word-wrap: break-word;
 }
 

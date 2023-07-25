@@ -53,12 +53,23 @@
   }
   /*galley page*/
   .image-description{
-    font-size: 17px;
-    width: 60%;
-    bottom: 25%;
+    font-size: 20px;
+    width: max-content;
+    bottom: 0%;
+  }
+  .navigation-button{
+    width: auto;
+    height: auto;
   }
   .prev-button{
     z-index: 9000;
+  }
+  .prev-button {
+    left: 0px;
+  }
+  
+  .next-button {
+    right: 0px;
   }
 }
 
@@ -106,8 +117,8 @@
    /*galley page*/
    .image-description{
     font-size: 20px;
-    width: 40%;
-    bottom: 13%;
+    width: max-content;
+    bottom: 0%;
   }
 }
 /* Screens larger than medium screens, but not full screen */
@@ -130,5 +141,6 @@
   .paragraph {
     /* Your styles */
   }
+
 }
 /*larger screens is the default css styles*/

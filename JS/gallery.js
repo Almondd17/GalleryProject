@@ -2,11 +2,11 @@ var categoryImages = {
     StillLife: [
       {
         path: "/images/Still-Life/SL1.jpg",
-        description: "A kettle, vase, and dish placed on a red table against a backdrop of paintings on the wall."
+        description: "A kettle, vase, and dish placed on a red table."
       },
       {
         path: "/images/Still-Life/SL2.jpg",
-        description: "Green plant in a blue vase against a purple backdrop."
+        description: "Green plant in a blue vase."
       },
       {
         path: "/images/Still-Life/SL3.jpg",
@@ -14,15 +14,15 @@ var categoryImages = {
       },
       {
         path: "/images/Still-Life/SL4.jpg",
-        description: "Three fruits and a lidded pitcher in a blue bowl on a red background."
+        description: "Three fruits and a lidded pitcher in a blue bowl."
       },
       {
         path: "/images/Still-Life/SL5.jpg",
-        description: "Delicate pink flowers and vibrant green leaves adorning branches."
+        description: "Pink flowers and vibrant green leaves."
       },
       {
         path: "/images/Still-Life/SL6.jpg",
-        description: "Assorted fruits on a blue tray with a prominent wine bottle."
+        description: "Assorted fruits on a blue tray with a wine bottle."
       },
       {
         path: "/images/Still-Life/SL7.jpg",
@@ -30,11 +30,11 @@ var categoryImages = {
       },
       {
         path: "/images/Still-Life/SL8.jpg",
-        description: "A brown pot showcasing a lush green plant adorned with vibrant pink roses."
+        description: "A brown pot showcasing a green plant with pink roses."
       },
       {
         path: "/images/Still-Life/SL9.jpg",
-        description: "Captivating yellow tulips in a brown pot against a serene blue background."
+        description: "Yellow tulips in a brown pot against a blue background."
       },
     ],
     portraits: [
@@ -54,7 +54,7 @@ var categoryImages = {
     animals: [
       {
         path: "/images/animals/animals1.jpg",
-        description: ""
+        description: "Three penguins against a blue backdrop."
       },
       {
         path: "/images/animals/animals2.jpg",
@@ -70,7 +70,7 @@ var categoryImages = {
       },
       {
         path: "/images/animals/animals5.jpg",
-        description: ""
+        description: "Two toucans with a different appearance standing on a branch"
       },
     ],
     buildings: [
