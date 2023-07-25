@@ -161,8 +161,12 @@ var categoryImages = {
   function zoomImage(event) {
     var category = event.target.getAttribute("data-category");
     var images = categoryImages[category];
-    var imageIndex = images.indexOf(event.target.src);
-  
+    var imagePath = event.target.src.replace('http://127.0.0.1:5502', '');
+
+    var imageIndex = images.findIndex(image => image.path === imagePath);
+    console.log("imageIndex:", imageIndex);
+
+    
     var container = document.createElement("div");
     container.classList.add("image-container");
   
@@ -181,7 +185,7 @@ var categoryImages = {
     
     var descriptionSpan = document.createElement("span");
     descriptionSpan.classList.add("image-description");
-    descriptionSpan.innerText = "Scroll to see more paintings!";
+    descriptionSpan.innerText = "";
     var matchedIndex = -1; // Variable to store the matched index, initially set to -1
 
     for (var i = 0; i < images.length; i++) {
@@ -214,6 +218,7 @@ var categoryImages = {
       imageIndex = (imageIndex - 1 + images.length) % images.length;
       enlargedImage.src = images[imageIndex].path;
       descriptionSpan.innerText = images[imageIndex].description;
+      console.log("imageIndex:", imageIndex);
     });
   
     nextButton.addEventListener("click", function (event) {
@@ -221,6 +226,7 @@ var categoryImages = {
       imageIndex = (imageIndex + 1) % images.length;
       enlargedImage.src = images[imageIndex].path;
       descriptionSpan.innerText = images[imageIndex].description;
+      console.log("imageIndex:", imageIndex);
     });
   }
   
