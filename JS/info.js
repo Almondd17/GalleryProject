@@ -34,28 +34,17 @@ const languageSwitch = document.getElementById('languageSwitch');
 const mainElementsToTranslate = document.querySelectorAll('main [data-lang]');
 
 const translations = {
-  'Still Life Paintings': {
-    en: 'Still Life Paintings',
-    he: 'ציורי טבע דומם'
-  },
   'About Doron': {
     en: 'About Doron',
     he: 'אודות דורון'
   },
-  '"Still life" is a genre in visual art, primarily in painting, that depicts various objects—natural or man-made, such as plants, flowers, fruits, food items, and household items. The accessibility of these objects allows the artist to work within their studio, their private space, and enables them to have full control over the chosen subject. The artist determines everything, selecting the objects, composing the scene, choosing the angle of view, and establishing the placement and atmosphere. The artist creates the expression of \'beauty\' for themselves, hence the term \'still life,\' which is closely related to the fundamentals of painting. In its very form, it resembles a grid (an element of a sort of network) that organizes the composition into order and aesthetics.':
-  {
-    en:
-      '"Still life" is a genre in visual art, primarily in painting, that depicts various objects—natural or man-made, such as plants, flowers, fruits, food items, and household items. The accessibility of these objects allows the artist to work within their studio, their private space, and enables them to have full control over the chosen subject. The artist determines everything, selecting the objects, composing the scene, choosing the angle of view, and establishing the placement and atmosphere. The artist creates the expression of \'beauty\' for themselves, hence the term \'still life,\' which is closely related to the fundamentals of painting. In its very form, it resembles a grid (an element of a sort of network) that organizes the composition into order and aesthetics.',
-    he:
-      '״טבע דומם״ הוא סוג באמנות הוויזואלית, בעיקר בציור, המתאר עצמים שונים - טבעיים או יצוריים, כגון צמחים, פרחים, פירות, פריטי מזון וחפצי בית. הנגישות של עצמים אלה מאפשרת לאמן לעבוד בתוך הסטודיו שלהם, במרחב הפרטי שלהם, ומאפשרת להם להיות בשליטה מלאה על הנושא שנבחר. האמן קובע הכול, בוחר את העצמים, מלטף את הסצינה, בוחר את זווית התצפית, וקובע את המיקום והאווירה. האמן יוצר את ביטוי ה״יופי״ עבור עצמו, ולכן גם המונח ״טבע דומם״ קשור בצורה קרובה ליסודות הציור. במבנה עצמו, הוא דומה לגריד (רכיב מתוך סוג של רשת) שמארגן את ההרכבה לסדר ואסטטיקה.'
-  },
   'Doron Mirsky is interested in various subjects, including science, art, reading books, and language learning. He freely speaks six languages. Doron has been drawing since a young age, and among the topics he enjoys illustrating, we have chosen to present his \'still life\' paintings of homes and birds in this exhibition.': {
     en: 'Doron Mirsky is interested in various subjects, including science, art, reading books, and language learning. He freely speaks six languages. Doron has been drawing since a young age, and among the topics he enjoys illustrating, we have chosen to present his \'still life\' paintings of homes and birds in this exhibition.',
-    he: 'דורון מירסקי מתעניין בנושאים שונים, כולל מדע, אמנות, קריאת ספרים ולימוד שפות. הוא מדבר באופן שוטף שש שפות. דורון מצייר מגיל צעיר, ובין הנושאים שהוא נהנה להתאמץ, בחרנו להציג בתערוכה זו את ציורי הטבע הנצחיים שלו של בתים וציפורים בתערוכה זו.'
+    he: 'דורון מירסקי מתעניין בנושאים רבים ביניהם מדע, אמנות, קריאת ספרים ולימוד שפות. הוא דובר שש שפות באופן חופשי. דורון מצייר מגיל צעיר ומתוך הנושאים שהוא אוהב לצייר בחרנו להציג בתערוכה את ציורי הטבע דומם הבתים והציפורים.'
   },
   'Doron is particularly fascinated by architecture, especially ancient churches. During his travels around the world, he discovers a special interest in old churches. A special experience for him was visiting St. Peter\'s Basilica in Rome.': {
     en: 'Doron is particularly fascinated by architecture, especially ancient churches. During his travels around the world, he discovers a special interest in old churches. A special experience for him was visiting St. Peter\'s Basilica in Rome.',
-    he: 'דורון מתאופף באדריכלות, במיוחד בכנסיות עתיקות. במהלך המסעותיו ברחבי העולם, הוא מגלה עניין מיוחד בכנסיות עתיקות. חוויה מיוחדת עבורו הייתה ביקור בקתדרלת סנט פטרוס ברומא.'
+    he: 'דורון מתעניין מאד בארכיטקטורה ובמיוחד במבני כנסיות. בכל טיול שלו ברחבי העולם, הוא מגלה עניין מיוחד בכנסיות עתיקות. חוויה מיוחדת עבורו הייתה ביקור בכנסיית פטרוס הקדוש ברומא.'
   },
   'Doron loves painting houses. His paintings are characterized by wide surfaces and bold colors. Another direction in his artwork involves animal paintings, especially birds. Birds symbolize both beauty and a longing for freedom and liberation.': {
     en: 'Doron loves painting houses. His paintings are characterized by wide surfaces and bold colors. Another direction in his artwork involves animal paintings, especially birds. Birds symbolize both beauty and a longing for freedom and liberation.',

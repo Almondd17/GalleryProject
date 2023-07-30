@@ -11,7 +11,7 @@ const translations = {
   };
   
   // Default language
-  let currentLanguage = translations.english;
+  let currentLanguage = translations.hebrew;
   
   // Function to update the paragraph content based on the selected language
   function updateContent() {
@@ -33,11 +33,11 @@ const translations = {
   // Event listener for the language switch checkbox
   document.getElementById("languageSwitch").addEventListener("change", function() {
     if (this.checked) {
-      currentLanguage = translations.hebrew;
-      document.getElementById("changeTitle").innerHTML = translations.hebrew.switchtext;
-    } else {
       currentLanguage = translations.english;
       document.getElementById("changeTitle").innerHTML = translations.english.switchtext;
+    } else {
+      currentLanguage = translations.hebrew;
+      document.getElementById("changeTitle").innerHTML = translations.hebrew.switchtext;
     }
     updateContent();
   });

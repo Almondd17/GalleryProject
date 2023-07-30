@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
+    overflow-y: hidden; 
 }
 .navbar{
     background-color: none;
@@ -116,7 +116,7 @@ body{
 
 @keyframes image-change {
     0%{
-        background-image: url(/images/Still-Life/SL1.jpg);
+        background-image: url(/images/Still-Life/SL6.jpg);
         background-size: cover;
         background-position: center;
     }

@@ -68,8 +68,8 @@ body {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 10px;
     display: none;
     z-index: 999;
     white-space: nowrap;
@@ -90,11 +90,14 @@ body {
     margin-bottom: 100px;
     border: 2px solid #cccccc; /* Add a border around the images */
     border-radius: 5px; /* Add rounded corners to the images */
-    transition: 0.3s;
+    border: 4px solid #fff;
+    transition: 0.4s;
 }
 
 .category-image:hover{
-    box-shadow: 0 0 2px 5px coral;
+    transform: scale(1.05);
+    border-color: rgba(0, 236, 249, 0.843);
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 .category-h2{
     text-align: center;
