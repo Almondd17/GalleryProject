@@ -5,8 +5,28 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
   }
   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Button on each end of the scrollbar */
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
   header {
     display: flex;
     align-items: center;

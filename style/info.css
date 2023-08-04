@@ -6,6 +6,8 @@
   body, h1, h2, p, ul, li {
       margin: 0;
       padding: 0;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent;
     }
   
   /* Global Styles */
@@ -66,8 +68,8 @@
   main {
     padding: 20px;
     position: relative;
-    height: 70ch;
-    
+    height: min-content;
+    min-height: 70ch;
   }
 
   main h2 {
