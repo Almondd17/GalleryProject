@@ -10,19 +10,19 @@ var categoryImages = {
       },
       {
         path: "/images/Still-Life/SL3.jpg",
-        description: "Colorful bowls and utensils against a modern background."
+        description: "Colorful tools on a table."
       },
       {
         path: "/images/Still-Life/SL4.jpg",
-        description: "Three fruits and a lidded pitcher in a blue bowl."
+        description: "Fruits and a pitcher in a blue bowl."
       },
       {
         path: "/images/Still-Life/SL5.jpg",
-        description: "Pink flowers and vibrant green leaves."
+        description: "Pink flowers and green leaves."
       },
       {
         path: "/images/Still-Life/SL6.jpg",
-        description: "Assorted fruits on a blue tray with a wine bottle."
+        description: "Fruits on a blue tray with a wine bottle."
       },
       {
         path: "/images/Still-Life/SL7.jpg",
@@ -30,101 +30,133 @@ var categoryImages = {
       },
       {
         path: "/images/Still-Life/SL8.jpg",
-        description: "A brown pot showcasing a green plant with pink roses."
+        description: "Pink roses in a brown pot."
       },
       {
         path: "/images/Still-Life/SL9.jpg",
-        description: "Yellow tulips in a brown pot against a blue background."
+        description: "Yellow tulips in a brown pot."
+      },
+      {
+        path: "/images/Still-Life/SL10.jpg",
+        description: "Shining flowers in a blue pot."
+      },
+      {
+        path: "/images/Still-Life/SL11.jpg",
+        description: "Colorful flowers against the sky."
+      },
+      {
+        path: "/images/Still-Life/SL12.jpg",
+        description: "Flower-adorned table in a colorful living room."
+      },
+      {
+        path: "/images/Still-Life/SL13.jpg",
+        description: "Fruits and a jug in blue."
       },
     ],
     portraits: [
       {
         path: "/images/portraits/person1.jpg",
-        description: ""
+        description: "woman with a blonde hair."
       },
       {
         path: "/images/portraits/person2.jpg",
-        description: ""
+        description: "woman with a red dress."
       },
       {
         path: "/images/portraits/person3.jpg",
-        description: ""
+        description: "brown haired woman portrait."
       },
     ],
     animals: [
       {
         path: "/images/animals/animals1.jpg",
-        description: "Three penguins against a blue backdrop."
+        description: "Three penguins."
       },
       {
         path: "/images/animals/animals2.jpg",
-        description: ""
+        description: "Bird on a pitcher."
       },
       {
         path: "/images/animals/animals3.jpg",
-        description: ""
+        description: "Stork in beautiful nature."
       },
       {
         path: "/images/animals/animals4.jpg",
-        description: ""
+        description: "Horse standing next to trees."
       },
       {
         path: "/images/animals/animals5.jpg",
-        description: "Two toucans with a different appearance standing on a branch"
+        description: "Two different toucans on a branch"
+      },
+      {
+        path: "/images/animals/animals6.jpg",
+        description: "Three birds on a tree."
       },
     ],
     buildings: [
       {
         path: "/images/buildings/buildings1.jpg",
-        description: ""
+        description: "Building 1"
       },
       {
         path: "/images/buildings/buildings2.jpg",
-        description: ""
+        description: "Building 2"
       },
       {
         path: "/images/buildings/buildings3.jpg",
-        description: ""
+        description: "Building 3"
       },
       {
         path: "/images/buildings/buildings4.jpg",
-        description: ""
+        description: "Building 4"
       },
       {
         path: "/images/buildings/buildings5.jpg",
-        description: ""
+        description: "Building 5"
       },
       {
         path: "/images/buildings/buildings6.jpg",
-        description: ""
+        description: "Building 6"
       },
       {
         path: "/images/buildings/buildings7.jpg",
-        description: ""
+        description: "Building 7"
       },
       {
         path: "/images/buildings/buildings8.jpg",
-        description: ""
+        description: "Building 8"
       },
       {
         path: "/images/buildings/buildings9.jpg",
-        description: ""
+        description: "Building 9"
       },
       {
         path: "/images/buildings/buildings10.jpg",
-        description: ""
+        description: "Building 10"
       },
       {
         path: "/images/buildings/buildings11.jpg",
-        description: ""
+        description: "Building 11"
       },
       {
         path: "/images/buildings/buildings12.jpg",
-        description: ""
+        description: "Building 12"
       },
       {
         path: "/images/buildings/buildings13.jpg",
-        description: ""
+        description: "Building 13"
+      },
+      {
+        path: "/images/buildings/buildings14.jpg",
+        description: "Building 14"
+      },
+      {
+        path: "/images/buildings/buildings15.jpg",
+        description: "Building 15"
+      },
+      {
+        path: "/images/buildings/buildings16.jpg",
+        description: "Building 16"
       },
     ]
   };
@@ -150,7 +182,6 @@ var categoryImages = {
   
     // Update the content div with the new category content
     contentDiv.innerHTML = categoryContent;
-  
     // Add click event listener to each image
     var categoryImageElements = document.getElementsByClassName("category-image");
     for (var i = 0; i < categoryImageElements.length; i++) {
@@ -228,6 +259,7 @@ var categoryImages = {
       descriptionSpan.innerText = images[imageIndex].description;
       console.log("imageIndex:", imageIndex);
     });
+    
   }
   
   function tooltip() {
