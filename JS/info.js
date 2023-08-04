@@ -34,47 +34,46 @@ const languageSwitch = document.getElementById('languageSwitch');
 const mainElementsToTranslate = document.querySelectorAll('main [data-lang]');
 
 const translations = {
-  'About Doron': {
-    en: 'About Doron',
-    he: 'אודות דורון'
-  },
-  'Doron Mirsky is interested in various subjects, including science, art, reading books, and language learning. He freely speaks six languages. Doron has been drawing since a young age, and among the topics he enjoys illustrating, we have chosen to present his \'still life\' paintings of homes and birds in this exhibition.': {
-    en: 'Doron Mirsky is interested in various subjects, including science, art, reading books, and language learning. He freely speaks six languages. Doron has been drawing since a young age, and among the topics he enjoys illustrating, we have chosen to present his \'still life\' paintings of homes and birds in this exhibition.',
-    he: 'דורון מירסקי מתעניין בנושאים רבים ביניהם מדע, אמנות, קריאת ספרים ולימוד שפות. הוא דובר שש שפות באופן חופשי. דורון מצייר מגיל צעיר ומתוך הנושאים שהוא אוהב לצייר בחרנו להציג בתערוכה את ציורי הטבע דומם הבתים והציפורים.'
-  },
-  'Doron is particularly fascinated by architecture, especially ancient churches. During his travels around the world, he discovers a special interest in old churches. A special experience for him was visiting St. Peter\'s Basilica in Rome.': {
-    en: 'Doron is particularly fascinated by architecture, especially ancient churches. During his travels around the world, he discovers a special interest in old churches. A special experience for him was visiting St. Peter\'s Basilica in Rome.',
-    he: 'דורון מתעניין מאד בארכיטקטורה ובמיוחד במבני כנסיות. בכל טיול שלו ברחבי העולם, הוא מגלה עניין מיוחד בכנסיות עתיקות. חוויה מיוחדת עבורו הייתה ביקור בכנסיית פטרוס הקדוש ברומא.'
-  },
-  'Doron loves painting houses. His paintings are characterized by wide surfaces and bold colors. Another direction in his artwork involves animal paintings, especially birds. Birds symbolize both beauty and a longing for freedom and liberation.': {
-    en: 'Doron loves painting houses. His paintings are characterized by wide surfaces and bold colors. Another direction in his artwork involves animal paintings, especially birds. Birds symbolize both beauty and a longing for freedom and liberation.',
-    he: 'דורון אוהב לצייר בתים. ציוריו מתארכים בשטחים רחבים וצבעים מוחזקים. עוד כיוון ביצירתיותו כולל ציורי חיות, בעיקר ציפורים. הציפורים מסמלות את היופי ואת תשוקת החירות והשחרור.'
-  },
-  'In his still life paintings, Doron often emphasizes flowers and various objects. In these paintings, Doron combines beauty with order and organization. Through his paintings and the concept of beauty, he observes and successfully creates order and logic within the world.': {
-    en: 'In his still life paintings, Doron often emphasizes flowers and various objects. In these paintings, Doron combines beauty with order and organization. Through his paintings and the concept of beauty, he observes and successfully creates order and logic within the world.',
-    he: 'בציורי הטבע הדומם שלו, דורון נוהג להדגיש בעיקר פרחים ופריטים שונים. בציורים אלה, דורון משלב את היופי עם הסדר והארגון. באמצעות ציוריו והמושג של היופי, הוא מתבונן ויוצר בהצלחה סדר והגיון בתוך העולם.'
-  }
-  // Add other translations here
+    aboutTitle: {
+        hebrew: 'אודות דורון',
+        english: 'About Doron'
+    },
+    aboutText1: {
+      hebrew: 'דורון מירסקי מתעניין בנושאים רבים ביניהם מדע, אמנות, קריאת ספרים ולימוד שפות. הוא דובר שש שפות באופן חופשי. דורון מצייר מגיל צעיר ומתוך הנושאים שהוא אוהב לצייר בחרנו להציג בתערוכה את ציורי ה\'טבע דומם\' הבתים והציפורים.',
+      english: 'Doron Mirsky is interested in various topics including science, art, reading, and language learning. He speaks six languages fluently. Doron has been drawing since a young age and among the subjects he loves to paint, we chose to present in the exhibition the "Silent Nature" paintings, houses, and birds.'
+    },
+    aboutText2: {
+        hebrew: 'דורון מתעניין מאד בארכיטקטורה ובמיוחד במבני כנסיות. בכל טיול שלו ברחבי העולם, הוא מגלה עניין מיוחד בכנסיות עתיקות. חוויה מיוחדת עבורו הייתה ביקור בכנסיית פטרוס הקדוש ברומא.',
+        english: 'Doron is very interested in architecture, especially in church buildings. On each of his trips around the world, he discovers a special interest in ancient churches. A unique experience for him was visiting the Church of St. Peter in Rome.'
+    },
+    aboutText3: {
+        hebrew: 'דורון אוהב לצייר בתים. ציוריו מתאפיינים במשטחים רחבים ובצבעים עזים. כיוון נוסף  בציוריו הינם ציורי בעלי חיים ובעיקר ציפורים. הציפורים מסמלות עבורו הן יופי והן כמיהה לחופש ולשחרור.',
+        english: 'Doron loves to paint houses. His paintings are characterized by wide areas and bold colors. Another direction in his art is animal paintings, mainly birds. Birds symbolize for him both beauty and the yearning for freedom and liberation.'
+    },
+    aboutText4: {
+        hebrew: 'בציורי הטבע הדומם מרבה דורון לצייר פרחים וכן חפצים שונים. בציורים אילו משלב דורון את היופי יחד עם הסדר והארגון. הוא מתבונן באמצעות הציורים ודרך מושג היופי מצליח לארגן וליצר לעצמו סדר והגיון בתוך העולם.',
+        english: 'In his silent nature paintings, Doron often paints flowers and various objects. In these paintings, Doron combines beauty with order and organization. Through his artwork and the concept of beauty, he contemplates and succeeds in creating order and logic within the world.'
+    },
+    // Define more translations here
 };
 
+// Update the toggleLanguage function
 const toggleLanguage = () => {
-    const lang = languageSwitch.checked ? 'he' : 'en';
+    const currentLanguage = languageSwitch.checked ? 'english' : 'hebrew';
+
     mainElementsToTranslate.forEach(element => {
-        const key = element.dataset.lang; // Use the data-lang attribute as the key
-        const translation = translations[key] ? translations[key][lang] || key : key;
-        element.textContent = translation;
-        //change the text css by adding a class
-        if (lang === 'he') {
-          element.classList.add('rtl-text');
-        } else {
-          element.classList.remove('rtl-text');
-        }    
+        const translationKey = element.getAttribute('data-lang');
+        if (translations.hasOwnProperty(translationKey)) {
+            element.textContent = translations[translationKey][currentLanguage];
+            if (currentLanguage === 'hebrew'){
+              element.classList.add('rtl-text');
+            }
+            else{
+              element.classList.remove('rtl-text');
+            }
+        }
     });
 };
 
+// Add event listener for language switch
 languageSwitch.addEventListener('change', toggleLanguage);
-
-// Store the English text in a separate data attribute for each element
-mainElementsToTranslate.forEach(element => {
-    element.dataset.lang = element.textContent.trim(); // Store the English text
-});

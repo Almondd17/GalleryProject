@@ -12,6 +12,7 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 2;
+    overflow-x: hidden;
   }
   
   header {
@@ -32,7 +33,7 @@
   }
 
   p {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 20px;
     font-family: 'Rajdhani', sans-serif;
   }
@@ -65,7 +66,8 @@
   main {
     padding: 20px;
     position: relative;
-    height: 70%;
+    height: 70ch;
+    
   }
 
   main h2 {

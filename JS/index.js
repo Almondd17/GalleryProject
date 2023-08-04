@@ -22,6 +22,8 @@ const translations = {
     const title = document.getElementById("changeTitle")
     if (currentLanguage === translations.hebrew) {
       paragraphElement.style.fontFamily = "'Miriam', sans-serif";
+      title.style.fontFamily = "'Miriam', sans-serif";
+      title.style.fontWeight = "lighter";
     } else {
       paragraphElement.style.fontFamily = "'Raleway', sans-serif";
       title.style.fontFamily = "'Raleway', sans-serif";
