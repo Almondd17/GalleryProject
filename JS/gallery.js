@@ -2,7 +2,7 @@ var categoryImages = {
     StillLife: [
       {
         path: "/images/Still-Life/SL1.jpg",
-        description: "A kettle, vase, and dish placed on a red table."
+        description: "Shining flowers in a blue pot."
       },
       {
         path: "/images/Still-Life/SL2.jpg",
@@ -38,7 +38,7 @@ var categoryImages = {
       },
       {
         path: "/images/Still-Life/SL10.jpg",
-        description: "Shining flowers in a blue pot."
+        description: "A kettle, vase, and dish placed on a red table."
       },
       {
         path: "/images/Still-Life/SL11.jpg",
@@ -56,15 +56,15 @@ var categoryImages = {
     portraits: [
       {
         path: "/images/portraits/person1.jpg",
-        description: "woman with a blonde hair."
+        description: "A woman with blonde hair."
       },
       {
         path: "/images/portraits/person2.jpg",
-        description: "woman with a red dress."
+        description: "A woman wearing a red dress."
       },
       {
         path: "/images/portraits/person3.jpg",
-        description: "brown haired woman portrait."
+        description: "Brown haired woman portrait."
       },
     ],
     animals: [
@@ -169,7 +169,12 @@ var categoryImages = {
     contentDiv.innerHTML = "";
   
     // Generate new content based on the selected category
-    var categoryContent = "<h2 class='category-h2'>" + category.charAt(0).toUpperCase() + category.slice(1) + "</h2>";
+    if (category === 'StillLife'){
+      var categoryContent = "<h2 class='category-h2'>" + category.slice(0, 5) + ' ' + category.slice(5) + "</h2>";
+    }
+    else{
+      var categoryContent = "<h2 class='category-h2'>" + category.charAt(0).toUpperCase() + category.slice(1) + "</h2>";
+    }
     
     // Get the images for the selected category
     var images = categoryImages[category];
@@ -216,16 +221,7 @@ var categoryImages = {
     
     var descriptionSpan = document.createElement("span");
     descriptionSpan.classList.add("image-description");
-    descriptionSpan.innerText = "";
-    var matchedIndex = -1; // Variable to store the matched index, initially set to -1
-
-    for (var i = 0; i < images.length; i++) {
-      if (images[i].path === imageIndex) {
-        matchedIndex = i;
-        descriptionSpan.innerText = images[i].description;
-        break;
-      }
-    }
+    descriptionSpan.innerText = images[imageIndex].description;
     
     container.appendChild(prevButton);
     container.appendChild(enlargedImage);

@@ -179,9 +179,8 @@ input:checked[type="checkbox"]:before{
 .switch-div{
     display: flex;
     align-self: flex-end;
-    flex-direction: row;
     position: absolute;
 }
 .switch-div input{
-    margin-top: 15px;
+    margin-top: 10px;
 }

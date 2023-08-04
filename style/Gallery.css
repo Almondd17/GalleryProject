@@ -32,24 +32,33 @@ body {
     align-items: center;
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
   }
   
   h1 {
     margin: 0;
-    flex-grow: 0.958;
+    flex-grow: 0.94;
     text-align: center;
     font-size: xx-large;
     font-family: 'Raleway';
   }
   
   .home-button {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-    padding: 6px 12px;
     margin-right: 10px;
-    background-color: #666;
-    border-radius: 4px;
+    background-color: #d0d0d0;
+    border-radius: 5px;
+    padding: 10px 10px;
+    transition: 0.2s;
+    font-size: 20px;
+    text-align: center;
+    width: 3.5%;
+  }
+  .home-button:hover{
+    color: #fff;
+    background-color: #686868;
+    transition: 0.2s;
   }
   .gallery {
     display: flex;
@@ -93,6 +102,7 @@ body {
     display: none;
     z-index: 999;
     white-space: nowrap;
+    text-transform: capitalize;
   }
 
   
@@ -156,20 +166,16 @@ body {
 }
 
 .navigation-button {
+  color: white;
   border: none;
-  border-radius: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 10px;
-  font-size: 28px;
+  font-size: 50px;
   cursor: pointer;
   transition: opacity 0.3s;
-  width: 50px;
-  height: 65px;
-  background-image: linear-gradient(95deg, rgba(122, 248, 255, 0.508), cyan);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: none;
+  transition: 0.3s;
 }
 
 .prev-button {
@@ -181,7 +187,8 @@ body {
 }
 
 .navigation-button:hover {
-  opacity: 0.7;
+  font-size: 65px;
+  transition: 0.3s;
 }
 .material-symbols-outlined {
   font-variation-settings:
