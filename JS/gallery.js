@@ -38,7 +38,7 @@ var categoryImages = {
       },
       {
         path: "/images/Still-Life/SL10.jpg",
-        description: "A kettle, vase, and dish placed on a red table."
+        description: "Fruits and a jug in blue."
       },
       {
         path: "/images/Still-Life/SL11.jpg",
@@ -47,10 +47,6 @@ var categoryImages = {
       {
         path: "/images/Still-Life/SL12.jpg",
         description: "Flower-adorned table in a colorful living room."
-      },
-      {
-        path: "/images/Still-Life/SL13.jpg",
-        description: "Fruits and a jug in blue."
       },
     ],
     portraits: [
@@ -153,10 +149,6 @@ var categoryImages = {
       {
         path: "/images/buildings/buildings15.jpg",
         description: "Building 15"
-      },
-      {
-        path: "/images/buildings/buildings16.jpg",
-        description: "Building 16"
       },
     ]
   };

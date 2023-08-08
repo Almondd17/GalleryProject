@@ -70,6 +70,7 @@
     position: relative;
     height: min-content;
     min-height: 70ch;
+    text-align: center;
   }
 
   main h2 {
@@ -129,7 +130,6 @@
 /* CSS for the right-to-left layout */
 .rtl-text {
   direction: rtl;
-  text-align: center;
   font-family: 'IBM Plex Sans Hebrew', sans-serif;
 }
 
