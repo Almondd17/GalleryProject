@@ -36,23 +36,18 @@ body{
     color: black;
 }
 .navbar a:hover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background: #525252;
+    color: white;
     transition: 0.3s;
     cursor: pointer;
+}
+.navbar a:active{
+    cursor: progress;
+    background: #c6c6c6;
 }
 .navbar span{
     font-size: 45px;
     margin: 30px;
-}
-#menuButton{
-    border: none;
-    border-radius: 10px;
-    background: none;
-    padding: 10px;
-}
-#menuButton:hover{
-    background: rgba(0, 0, 0, 0.085);
-    transition: 0.6s;
 }
 #logo{
     transition: 0.5s;
