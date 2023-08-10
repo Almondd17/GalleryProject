@@ -189,9 +189,9 @@ var categoryImages = {
   function zoomImage(event) {
     var category = event.target.getAttribute("data-category");
     var images = categoryImages[category];
-    var imagePath = event.target.src.replace('http://127.0.0.1:5502', '');
+  
 
-    var imageIndex = images.findIndex(image => image.path === imagePath);
+    var imageIndex = images.findIndex(image => image.path === event.target.getAttribute("src"));
     console.log("imageIndex:", imageIndex);
 
     
