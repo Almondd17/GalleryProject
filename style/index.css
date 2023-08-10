@@ -111,27 +111,27 @@ body{
 
 @keyframes image-change {
     0%{
-        background-image: url(/images/Still-Life/SL6.jpg);
+        background-image: url(../images/Still-Life/SL6.jpg);
         background-size: cover;
         background-position: center;
     }
     25%{
-        background-image: url(/images/animals/animals4.jpg);
+        background-image: url(../images/animals/animals4.jpg);
         background-size: cover;
         background-position: center;
     }
     50%{
-        background-image: url(/images/portraits/person3.jpg);
+        background-image: url(../images/portraits/person3.jpg);
         background-size: cover;
         background-position: center;
     }
     75%{
-        background-image: url(/images/animals/animals5.jpg);
+        background-image: url(../images/animals/animals5.jpg);
         background-size: cover;
         background-position: center;
     }
     100%{
-        background-image: url(/images/Still-Life/SL9.jpg);
+        background-image: url(../images/Still-Life/SL9.jpg);
         background-size: cover;
         background-position: center;
     }

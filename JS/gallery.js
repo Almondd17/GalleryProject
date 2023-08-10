@@ -1,153 +1,153 @@
 var categoryImages = {
     StillLife: [
       {
-        path: "/images/Still-Life/SL1.jpg",
+        path: "../images/Still-Life/SL1.jpg",
         description: "Shining flowers in a blue pot."
       },
       {
-        path: "/images/Still-Life/SL2.jpg",
+        path: "../images/Still-Life/SL2.jpg",
         description: "Green plant in a blue vase."
       },
       {
-        path: "/images/Still-Life/SL3.jpg",
+        path: "../images/Still-Life/SL3.jpg",
         description: "Colorful tools on a table."
       },
       {
-        path: "/images/Still-Life/SL4.jpg",
+        path: "../images/Still-Life/SL4.jpg",
         description: "Fruits and a pitcher in a blue bowl."
       },
       {
-        path: "/images/Still-Life/SL5.jpg",
+        path: "../images/Still-Life/SL5.jpg",
         description: "Pink flowers and green leaves."
       },
       {
-        path: "/images/Still-Life/SL6.jpg",
+        path: "../images/Still-Life/SL6.jpg",
         description: "Fruits on a blue tray with a wine bottle."
       },
       {
-        path: "/images/Still-Life/SL7.jpg",
+        path: "../images/Still-Life/SL7.jpg",
         description: "A red kettle and glass paired with a green bowl."
       },
       {
-        path: "/images/Still-Life/SL8.jpg",
+        path: "../images/Still-Life/SL8.jpg",
         description: "Pink roses in a brown pot."
       },
       {
-        path: "/images/Still-Life/SL9.jpg",
+        path: "../images/Still-Life/SL9.jpg",
         description: "Yellow tulips in a brown pot."
       },
       {
-        path: "/images/Still-Life/SL10.jpg",
+        path: "../images/Still-Life/SL10.jpg",
         description: "Fruits and a jug in blue."
       },
       {
-        path: "/images/Still-Life/SL11.jpg",
+        path: "../images/Still-Life/SL11.jpg",
         description: "Colorful flowers against the sky."
       },
       {
-        path: "/images/Still-Life/SL12.jpg",
+        path: "../images/Still-Life/SL12.jpg",
         description: "Flower-adorned table in a colorful living room."
       },
     ],
     portraits: [
       {
-        path: "/images/portraits/person1.jpg",
+        path: "../images/portraits/person1.jpg",
         description: "A woman with blonde hair."
       },
       {
-        path: "/images/portraits/person2.jpg",
+        path: "../images/portraits/person2.jpg",
         description: "A woman wearing a red dress."
       },
       {
-        path: "/images/portraits/person3.jpg",
+        path: "../images/portraits/person3.jpg",
         description: "Brown haired woman portrait."
       },
     ],
     animals: [
       {
-        path: "/images/animals/animals1.jpg",
+        path: "../images/animals/animals1.jpg",
         description: "Three penguins."
       },
       {
-        path: "/images/animals/animals2.jpg",
+        path: "../images/animals/animals2.jpg",
         description: "Bird on a pitcher."
       },
       {
-        path: "/images/animals/animals3.jpg",
+        path: "../images/animals/animals3.jpg",
         description: "Stork in beautiful nature."
       },
       {
-        path: "/images/animals/animals4.jpg",
+        path: "../images/animals/animals4.jpg",
         description: "Horse standing next to trees."
       },
       {
-        path: "/images/animals/animals5.jpg",
+        path: "../images/animals/animals5.jpg",
         description: "Two different toucans on a branch"
       },
       {
-        path: "/images/animals/animals6.jpg",
+        path: "../images/animals/animals6.jpg",
         description: "Three birds on a tree."
       },
     ],
     buildings: [
       {
-        path: "/images/buildings/buildings1.jpg",
+        path: "../images/buildings/buildings1.jpg",
         description: "Building 1"
       },
       {
-        path: "/images/buildings/buildings2.jpg",
+        path: "../images/buildings/buildings2.jpg",
         description: "Building 2"
       },
       {
-        path: "/images/buildings/buildings3.jpg",
+        path: "../images/buildings/buildings3.jpg",
         description: "Building 3"
       },
       {
-        path: "/images/buildings/buildings4.jpg",
+        path: "../images/buildings/buildings4.jpg",
         description: "Building 4"
       },
       {
-        path: "/images/buildings/buildings5.jpg",
+        path: "../images/buildings/buildings5.jpg",
         description: "Building 5"
       },
       {
-        path: "/images/buildings/buildings6.jpg",
+        path: "../images/buildings/buildings6.jpg",
         description: "Building 6"
       },
       {
-        path: "/images/buildings/buildings7.jpg",
+        path: "../images/buildings/buildings7.jpg",
         description: "Building 7"
       },
       {
-        path: "/images/buildings/buildings8.jpg",
+        path: "../images/buildings/buildings8.jpg",
         description: "Building 8"
       },
       {
-        path: "/images/buildings/buildings9.jpg",
+        path: "../images/buildings/buildings9.jpg",
         description: "Building 9"
       },
       {
-        path: "/images/buildings/buildings10.jpg",
+        path: "../images/buildings/buildings10.jpg",
         description: "Building 10"
       },
       {
-        path: "/images/buildings/buildings11.jpg",
+        path: "../images/buildings/buildings11.jpg",
         description: "Building 11"
       },
       {
-        path: "/images/buildings/buildings12.jpg",
+        path: "../images/buildings/buildings12.jpg",
         description: "Building 12"
       },
       {
-        path: "/images/buildings/buildings13.jpg",
+        path: "../images/buildings/buildings13.jpg",
         description: "Building 13"
       },
       {
-        path: "/images/buildings/buildings14.jpg",
+        path: "../images/buildings/buildings14.jpg",
         description: "Building 14"
       },
       {
-        path: "/images/buildings/buildings15.jpg",
+        path: "../images/buildings/buildings15.jpg",
         description: "Building 15"
       },
     ]
