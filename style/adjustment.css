@@ -2,19 +2,26 @@
 @media (max-width: 767px) {/* Small screens */
   /*index.css small screen*/
   body{
+    width: 100%; /* Ensure the body takes up the full viewport width */
+    height: 100%; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin for body */
+    padding: 0; /* Remove default padding for body */
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    zoom: 1.0; /* You can adjust this value to set the initial scale */
+    min-zoom: 1.0; /* Minimum allowed zoom */
   }
   .navbar {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-self: center;
   }
   .navbar li {
     font-size: 24px;
     align-self: center;
-    margin: 1vh -1vh;
+    margin: 1vh -2vh;
   }
   .navbar #logo{
     display: none;
@@ -66,7 +73,7 @@
   }
   /*galley page*/
   .image-description{
-    font-size: 20px;
+    font-size: 3vh;
     width: max-content;
     bottom: 0%;
   }
