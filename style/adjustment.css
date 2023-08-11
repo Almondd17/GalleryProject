@@ -1,47 +1,51 @@
 /* Responsive styles */
 @media (max-width: 767px) {/* Small screens */
   /*index.css small screen*/
-  .body{
+  body{
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
   }
   .navbar {
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: -30px;
-  }
-  .switch-div{
-    align-self: center;
   }
   .navbar li {
-    position: relative;
-    flex-direction: row;
     font-size: 24px;
-    padding: 15px 15px;
-    margin: -15px;
+    align-self: center;
+    margin: 1vh -1vh;
   }
   .navbar #logo{
-    visibility: hidden;
+    display: none;
   }
   .paragraph-container {
-    width: 90%;
-    height: 40vh;
-    margin: 20px auto;
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 3vh;
   }
 
   .images-div {
-    width: 80%;
+    margin-top: 5vh;
+    width: 90%;
     height: 60vh;
-    margin: 10% auto;
     position: relative;
     align-items: center;
+    align-self: center;
   }
 
   .paragraph {
-    font-size: 27px;
-    margin-top: 80px;
+    font-size: 25px;
+    margin-top: 70px;
+    align-self: center;
+
   }
   .switch-div{
     align-self: flex-end;
+    font-size: smaller;
   }
   body {
     overflow-y: visible;
