@@ -100,7 +100,7 @@ body{
     border-radius: 10px;
     position: absolute;
     margin: 1.5% 5%;
-    width: 115vh;
+    width: 55%;
     height: 75vh;
     animation: image-change 20s infinite step-end;
     background-size: cover;
