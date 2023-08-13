@@ -13,17 +13,20 @@
     min-zoom: 1.0; /* Minimum allowed zoom */
   }
   .navbar {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+    justify-content: center;
   }
-  .navbar ul{
-    align-self: center;
-    margin: 4vh;
+  .navbar ul {
+    margin: 3vh;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar li {
+    margin: 2%;
   }
   .navbar li a{
-    font-size: 150%;
+    font-size: 21px;
   }
   .navbar #logo{
     display: none;
@@ -54,7 +57,7 @@
   }
   .switch-div{
     align-self: flex-end;
-    font-size: 1.5vh;
+    font-size: 1vh;
   }
   body {
     overflow-y: visible;
