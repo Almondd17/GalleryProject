@@ -32,8 +32,8 @@
     display: none;
   }
   .paragraph-container {
-    width: 80%;
-    height: 60vh;
+    width: 85%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -41,17 +41,17 @@
   }
 
   .images-div {
-    margin-top: 5vh;
+    margin-top: 3vh;
     width: 90%;
-    height: 60vh;
+    height: 50vh;
     position: relative;
     align-items: center;
     align-self: center;
   }
 
   .paragraph {
-    font-size: 25px;
-    margin-top: 70px;
+    font-size: 23px;
+    margin-top: 40px;
     align-self: center;
 
   }
@@ -164,7 +164,7 @@
     margin-top: 50px;
   }
   .switch-div{
-    right: 0;
+    right: 3;
   }
    /*galley page*/
    .image-description{
