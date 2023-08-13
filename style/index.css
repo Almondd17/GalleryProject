@@ -11,33 +11,31 @@ body{
     border-bottom: 1px solid grey;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
 }
 .navbar ul{
     list-style-type: none;
-    white-space: nowrap;
-    padding: auto;
+    margin-top: 10px;
 }
 .navbar li a{
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 0 20px;
-    transition: 0.3s;
-}
-.navbar li{
-    display: inline-block;
-    font-size: 30px;
     font-family: 'Quicksand';
     font-weight: lighter;
-    color: black;
+    text-decoration: none;
+    color: #333;
+    font-size: 27px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+}
+.navbar li{
+    display: inline;
+    margin-right: 2vh;
 }
 .navbar a:hover{
-    background: #525252;
-    color: white;
+    background-color: #555;
+    color: #fff;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -177,4 +175,9 @@ input:checked[type="checkbox"]:before{
 }
 .switch-div input{
     margin-top: 10px;
+}
+.switch-div h2{
+    position: relative;
+    align-self: center;
+    margin: 0;
 }
