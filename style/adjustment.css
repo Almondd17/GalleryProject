@@ -66,6 +66,7 @@
   /*information page menu buttons*/
   body{
     overflow-x: hidden;
+    max-zoom: 1;
   }
   .inf-menu li{
     display: flex;
